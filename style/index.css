@@ -82,7 +82,7 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 1rem 1%;
     padding-bottom: 20px;  
 }
 
@@ -152,67 +152,251 @@ footer nav a {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    color: black;
     padding: 2.5rem 2%;
     font-size: 14px;
 }
 
-.box1{
-    background-color: teal;
+.container .HomeNav a{
+    color: black;
 }
 
-.box2{
-    background-color: gold;
+.middle-content .boxes .box:nth-child(1){
+    background: teal;
 }
 
-.box3{
-    background-color: cadetblue;
+.middle-content .boxes .box:nth-child(2){
+    background: gold;
 }
 
-.box4{
-    background-color: coral;
+.middle-content .boxes .box:nth-child(3){
+    background: cadetblue;
 }
 
-.box5{
-    background-color: crimson;
+.middle-content .boxes .box:nth-child(4){
+    background: coral;
 }
 
-.box6{
-    background-color: forestgreen;
+.middle-content .boxes .box:nth-child(5){
+    background: crimson;
 }
 
-.box7{
-    background-color: darkorchid;
+.middle-content .boxes .box:nth-child(6){
+    background: forestgreen;
 }
 
-.box8{
-    background-color: hotpink;
+.middle-content .boxes .box:nth-child(7){
+    background: darkorchid;
 }
 
-.box9{
-    background-color: indigo;
+.middle-content .boxes .box:nth-child(8){
+    background: hotpink;
 }
 
-.box10{
-    background-color: dodgerblue;
+.middle-content .boxes .box:nth-child(9){
+    background: indigo;
 }
 
+.middle-content .boxes .box:nth-child(10){
+    background: dodgerblue;
+}
 /*Mobile Responsive Section*/
 
 /*Phone*/
 @media(max-width: 500px){
 
-    
+    .body{
+        height: 100%;
+    }
 
+    .container .HomeNav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .HomeNav a {
+        text-align: center;
+        width: 200px;
+        border: 0.5px solid lightgray;
+        padding: 5px;
+        display: inline-block;
+        border-radius: 15px;
+        color: lightgray;
+        text-decoration: none;
+        margin-bottom: 200;
+        background-color: white;
+    }
+
+    .container .HomeNav a:hover{
+        background-color: lightgray;
+        color: black;
+        border: 1px solid gray;
+    }
+
+
+    .container .HomeNav .LambdaLogo{
+        padding: 1rem;
+    }
+
+    /*Top Content*/
+
+    .container .top-content{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1%;
+
+    }
+
+    .container .top-content h2{
+        font-size: 140%;
+    }
+
+    .container .top-content p{
+        font-size: 80%;
+    }
+
+    .container .top-content .text-container{
+        width: 100%;
+        align-content: stretch;
+    }
+
+    /*Middle Content*/
+
+    .container .middle-content h2{
+        font-size: 140%;
+        padding: 1rem;
+    }
+
+    .container .middle-content .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .middle-content .boxes .box{
+        width: 100px;
+        height: 100px;
+    }
+
+    /*Bottem Content*/
+
+    .container .bottom-content{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1%;
+
+    }
+
+    .container .bottom-content h2{
+        font-size: 140%;
+    }
+
+    .container .bottom-content p{
+        font-size: 80%;
+    }
+
+    .container .bottom-content .bottom-container{
+        width: 100%;
+        align-content: stretch;
+    }
+
+
+    
 }
 
 /*Tablet*/
 @media(max-width: 800px){
 
-    
-    .container{
-
-        flex-direction: column;
+    .body{
+        height: 100%;
     }
-    
+
+    .container .HomeNav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .HomeNav a {
+        text-align: center;
+        width: 300px;
+        border: 1px solid lightgray;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 15px;
+        color: lightgray;
+        text-decoration: none;
+        margin-bottom: 200;
+        background-color: white;
+    }
+
+    .container .HomeNav a:hover{
+        background-color: lightgray;
+        color: black;
+        border: 1px solid gray;
+    }
+
+
+    .container .HomeNav .LambdaLogo{
+        padding: 2rem;
+    }
+
+    /*Top Content*/
+
+    .container .top-content{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2%;
+
+    }
+
+    .container .top-content h2{
+        font-size: 180%;
+    }
+
+    .container .top-content p{
+        font-size: 130%;
+    }
+
+    .container .top-content .text-container{
+        width: 100%;
+        align-content: stretch;
+    }
+
+    /*Middle Content*/
+
+    .container .middle-content h2{
+        font-size: 180%;
+        padding: 1rem;
+    }
+
+    .container .middle-content .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .middle-content .boxes .box{
+        width: 200px;
+        height: 200px;
+    }
+
+    /*Bottem Content*/
+
+    .container .bottom-content{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2%;
+
+    }
+
+    .container .bottom-content h2{
+        font-size: 180%;
+    }
+
+    .container .bottom-content p{
+        font-size: 130%;
+    }
+
+    .container .bottom-content .bottom-container{
+        width: 100%;
+        align-content: stretch;
+    }
+
 }
